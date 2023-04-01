@@ -1,0 +1,61 @@
+* {padding: 0; margin: 0}
+
+header {
+    height: 20vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #191919;
+
+    button {
+        font-size: 1.3rem;
+        padding: .7rem 0;
+        border: none;
+        width: 12%;
+        border-radius: 1rem;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .selected-tab {
+        background-color: white;
+        color: black;
+    }
+}
+
+main {
+    min-height: 80vh;
+    background-color: rgb(153, 153, 145);
+    padding: 0 20rem;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    * {
+        justify-self: center;
+        align-self: center
+    }
+
+    h1 {
+        font-family: poppins;
+        font-size: 4rem;
+        grid-column: 1 / 3;
+    }
+}
+
+@import './css/neon-button';
+
+@import './css/moving-gradient';
+
+@import './css/serpent-style'

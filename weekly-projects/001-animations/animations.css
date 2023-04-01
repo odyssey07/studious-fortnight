@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 20vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #191919;
+}
+header button {
+  font-size: 1.3rem;
+  padding: 0.7rem 0;
+  border: none;
+  width: 12%;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+header button:hover {
+  text-decoration: underline;
+}
+header .selected-tab {
+  background-color: white;
+  color: black;
+}
+
+main {
+  min-height: 80vh;
+  background-color: rgb(153, 153, 145);
+  padding: 0 20rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main * {
+  justify-self: center;
+  align-self: center;
+}
+main h1 {
+  font-family: poppins;
+  font-size: 4rem;
+  grid-column: 1/3;
+}
+
+.container-neon-button {
+  background: #031321;
+  font-family: consolas;
+}
+.container-neon-button a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 400ms;
+}
+.container-neon-button a:hover {
+  transition-delay: 700ms;
+  cursor: pointer;
+}
+.container-neon-button a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.container-neon-button a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+}
+.container-neon-button a span {
+  position: absolute;
+  display: block;
+}
+.container-neon-button a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+}
+.container-neon-button a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+}
+.container-neon-button .default {
+  color: #2196f3;
+}
+.container-neon-button .default:hover {
+  color: #255784;
+  background-color: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+.container-neon-button .default span:nth-child(1) {
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+.container-neon-button .default span:nth-child(3) {
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+.container-neon-button .variation-1 {
+  color: #9969dc;
+}
+.container-neon-button .variation-1:hover {
+  color: #5a1497;
+  background-color: #9969dc;
+  box-shadow: 0 0 10px #9969dc, 0 0 40px #9969dc, 0 0 80px #9969dc;
+}
+.container-neon-button .variation-1 span:nth-child(1) {
+  background: linear-gradient(90deg, transparent, #9969dc);
+}
+.container-neon-button .variation-1 span:nth-child(3) {
+  background: linear-gradient(270deg, transparent, #9969dc);
+}
+
+.container-moving-gradient {
+  background-color: rgb(29, 29, 29);
+}
+.container-moving-gradient button {
+  font-size: 24px;
+  font-family: "montserrat";
+  font-weight: normal;
+  padding: 1rem 3rem;
+  background-size: 400% 100%;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+}
+.container-moving-gradient button:hover {
+  animation: animation-moving-gradient 4s infinite;
+  cursor: pointer;
+}
+.container-moving-gradient .default {
+  background-image: linear-gradient(90deg, #32ffd6, #50aef1, #36a1ee, #50aef1, #32ffd6);
+}
+.container-moving-gradient .variation-1 {
+  background-image: linear-gradient(90deg, #32ffd6, #a35beb, #9236ee, #a35beb, #32ffd6);
+}
+.container-moving-gradient .variation-2 {
+  background-image: linear-gradient(90deg, #9f37ea, #e437ea, #9f37ea);
+}
+.container-moving-gradient .variation-3 {
+  background-image: linear-gradient(90deg, #ea3a37, #375eea, #ea3a37);
+}
+
+@keyframes animation-moving-gradient {
+  0% {
+    background-position-x: 0;
+  }
+  50% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+.container-serpent-style {
+  background-color: #121212;
+  font-family: poppins;
+}
+.container-serpent-style a {
+  position: relative;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 30px 60px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+.container-serpent-style a:before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+}
+.container-serpent-style a span {
+  opacity: 0;
+}
+.container-serpent-style a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateX(-50%);
+}
+.container-serpent-style a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+.container-serpent-style a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateX(50%);
+}
+.container-serpent-style a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+.container-serpent-style a:hover {
+  cursor: pointer;
+}
+.container-serpent-style a:hover span:nth-child(1) {
+  animation: animation-ss-1 400ms forwards;
+}
+.container-serpent-style a:hover span:nth-child(2) {
+  animation: animation-ss-2 400ms forwards;
+}
+.container-serpent-style a:hover span:nth-child(3) {
+  animation: animation-ss-3 400ms forwards;
+}
+.container-serpent-style a:hover span:nth-child(4) {
+  animation: animation-ss-4 400ms forwards;
+}
+.container-serpent-style .default {
+  color: #1670f0;
+}
+.container-serpent-style .default:before {
+  background-color: rgba(255, 255, 255, 0.031372549);
+}
+.container-serpent-style .default span:nth-child(1) {
+  background: linear-gradient(90deg, #0c002b, #1779ff);
+}
+.container-serpent-style .default span:nth-child(2) {
+  background: linear-gradient(180deg, #0c002b, #1779ff);
+}
+.container-serpent-style .default span:nth-child(3) {
+  background: linear-gradient(270deg, #0c002b, #1779ff);
+}
+.container-serpent-style .default span:nth-child(4) {
+  background: linear-gradient(0deg, #0c002b, #1779ff);
+}
+.container-serpent-style .variation-1 {
+  color: #8ef016;
+}
+.container-serpent-style .variation-1:before {
+  background-color: rgba(138, 197, 96, 0.1607843137);
+}
+.container-serpent-style .variation-1 span:nth-child(1) {
+  background: linear-gradient(90deg, rgba(42, 255, 60, 0), #2aff3c);
+}
+.container-serpent-style .variation-1 span:nth-child(2) {
+  background: linear-gradient(180deg, rgba(42, 255, 60, 0), #2aff3c);
+}
+.container-serpent-style .variation-1 span:nth-child(3) {
+  background: linear-gradient(270deg, rgba(42, 255, 60, 0), #2aff3c);
+}
+.container-serpent-style .variation-1 span:nth-child(4) {
+  background: linear-gradient(0deg, rgba(42, 255, 60, 0), #2aff3c);
+}
+
+@keyframes animation-ss-1 {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes animation-ss-2 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes animation-ss-3 {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes animation-ss-4 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

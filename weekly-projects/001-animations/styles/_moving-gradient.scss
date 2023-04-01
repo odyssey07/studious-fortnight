@@ -1,0 +1,41 @@
+.container-moving-gradient {
+    background-color: rgb(29, 29, 29);
+
+    button {
+        font-size: 24px;
+        font-family: 'montserrat';
+        font-weight: normal;
+        padding: 1rem 3rem;
+        background-size: 400% 100%;
+                color: white;
+        border: none;
+        border-radius: 2rem;
+        
+        &:hover {
+            animation: animation-moving-gradient 4s infinite;
+            cursor: pointer
+        }
+    }
+
+    .default {
+        background-image: linear-gradient(90deg, #32ffd6,#50aef1, #36a1ee, #50aef1, #32ffd6);
+    }
+
+    .variation-1 {
+        background-image: linear-gradient(90deg, #32ffd6,#a35beb, #9236ee, #a35beb, #32ffd6);
+    }
+
+    .variation-2 {
+        background-image: linear-gradient(90deg, #9f37ea, #e437ea, #9f37ea);
+    }
+
+    .variation-3 {
+        background-image: linear-gradient(90deg, #ea3a37, #375eea, #ea3a37);
+    }
+}
+
+@keyframes animation-moving-gradient {
+    0% {background-position-x: 0}
+    50% {background-position-x: 100%}
+    100% {background-position-x: 0;}
+}
