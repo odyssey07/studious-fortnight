@@ -21,4 +21,3 @@ const topThree = Object.entries(counting)
 
 
 console.log(topThree.map(element => element[0]))
-
