@@ -2,12 +2,19 @@ const imagesContainer = document.querySelector('.work-wrapper');
 
 let rawDirections = [];
 
+/* for (let i=1; i<=11; i++) {
+    rawDirections.push(`architecture-${i}.jpg`);
+}
+
+console.log(rawDirections)
+*/
 
 // R E C O P I L A C I Ó N   D E   D A T O S
 
 fetch('./images')
     .then(response => response.text())
     .then(data => {
+        // console.log(data)
         const startPosition = data.search(`<ul id="files"`);
         const endPosition = startPosition + data.slice(startPosition).search(`</ul>`);
 
@@ -21,6 +28,8 @@ fetch('./images')
 
                 return element.slice(images, classX)
             })
+        
+        // console.log(rawDirections)
     })
     .catch(error => console.error(error));
 
@@ -35,9 +44,9 @@ const getRandom = (minimum, maximum) =>
 
 // F U N C I Ó N   E L E C C I Ó N
 
-const choose = (array, quantity, noRepeat) => {
-    let choices = [];
-    let copyAr = [...array];
+const choose = (array, quantity, noRepeat=true) => {
+    const choices = [];
+    const copyAr = [...array];
     if (noRepeat) {
         if (quantity < array.length) {
             for (let i = 0; i < quantity; i++) {
@@ -70,7 +79,7 @@ setTimeout(() => {
     if (rawDirections.length === 0)
         rawDirections = ["architecture-1.jpg", "architecture-3.jpg", "architecture-4.jpg", "architecture-7.jpg", "architecture-10.jpg", "architecture-8.jpg"];
 
-    const selectedImages = choose(rawDirections, 4, true);
+    const selectedImages = choose(rawDirections, 4);
 
     allImagesH.forEach((image, index) => {
         image.src = `./images/${selectedImages[index]}`;
@@ -78,7 +87,8 @@ setTimeout(() => {
         image.style.height = getRandom(270, 400) + "px";
 
         image.addEventListener('mouseenter', () => {
-            image.classList.remove('grey-blur')
+            image.classList.remove('grey-blur');
+            console.log("Mouse enter");
         })
     })
 }, 100)

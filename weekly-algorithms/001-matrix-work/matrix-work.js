@@ -16,7 +16,7 @@ Crea una función que reciba una matriz de números y devuelva la suma de cada f
 // T O D A S  L A S   F I L A S   Y   C O L U M N A S 
 
 const linearSum = (matrix) => {
-    let rowSum = [];
+    const rowSum = []; 
     for (let i=0; i<matrix.length; i++) {
         rowSum.push(0);
         for (let j=0; j<matrix[0].length; j++) {
@@ -24,7 +24,7 @@ const linearSum = (matrix) => {
         }
     }
 
-    let columnSum = [];
+    const columnSum = [];
     for (let j=0; j<matrix[0].length; j++) {
         columnSum.push(0);
         for (let i=0; i<matrix.length; i++) {
@@ -102,6 +102,7 @@ const matrix = [
   //11 15  8
 ];
 
+
 const matrix2 = [
     [3, 4, 5, 5, 6], // 23
     [2, 2, 3, 9, 9], // 25
@@ -144,3 +145,6 @@ console.log('\n\n')
 console.log("V E R S I O N - 4")
 console.log(linearSumV4(matrix))
 console.log(linearSumV4(matrix2))
+
+
+

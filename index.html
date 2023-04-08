@@ -36,63 +36,74 @@
             color: grey;
             margin-top: .3rem;
         }
+
+        body h2:not(h2:nth-child(1)) {
+            margin-top: 2rem;
+        }
+
+        .studious-fortnight {
+            margin: 10px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
     </style>
 </head>
 
-<body>
-    <h2>Weekly Projects</h2>
+<body class="studious-fortnight">
+    <div class="weekly-projects">
+        <h2>Weekly Projects</h2>
 
-    <div class="link-set">
-        <a href="./weekly-projects/003-four-squares/four-squares.html">
-            <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png" alt=""
-                srcset="">
-            Four Squares
-        </a>
-        <p>for [#3] April 1 | Coded on March 30, 2023</p>
-    </div>
-    <div class="link-set">
-        <a href="./weekly-projects/002-responsive-navbar/responsive-navbar.html">
-            <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1680282385/logos/stop_a0ifj7.png" alt=""
-                srcset="">
-            Responsive NavBar
-        </a>
-        <p>for [#2] March 25 | Coded on ??</p>
-    </div>
-    <div class="link-set">
-        <a href="./weekly-projects/001-animations/animations.html">
-            <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png" alt=""
-                srcset="">
-            Animation Tabs
-        </a>
-        <p>for [#1] March 18 | Coded on ??</p>
-    </div>
-
-
-
-    <h2>Weekly Algorithms</h2>
-
-    <div class="link-set">
-        <a href="./weekly-algorithms/001-matrix-work/matrix-work.html">
-            <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png" alt=""
-                srcset="">
-            Matrix Work
-        </a>
-        <p>for [#1] April 1 | Coded on March 31, 2023</p>
+        <div class="link-set">
+            <a href="./weekly-projects/003-four-squares/four-squares.html">
+                <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
+                    alt="" srcset="">
+                Four Squares
+            </a>
+            <p>for [#3] April 1 | Coded on March 30, 2023</p>
+        </div>
+        <div class="link-set">
+            <a href="./weekly-projects/002-responsive-navbar/responsive-navbar.html">
+                <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1680282385/logos/stop_a0ifj7.png" alt=""
+                    srcset="">
+                Responsive NavBar
+            </a>
+            <p>for [#2] March 25 | Coded on ??</p>
+        </div>
+        <div class="link-set">
+            <a href="./weekly-projects/001-animations/animations.html">
+                <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
+                    alt="" srcset="">
+                Animation Tabs
+            </a>
+            <p>for [#1] March 18 | Coded on ??</p>
+        </div>
     </div>
 
-    <h2>Other Algorithms</h2>
-    <div class="link-set">
-        <a href="./other-algorithms/001-roman-numbers/roman-numbers.html">
-            <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png" alt=""
-                srcset="">
-            Roman numbers
-        </a>
-        <p>Coded on April 1, 2023</p>
+    <div class="weekly-algorithms">
+        <h2>Weekly Algorithms</h2>
+
+        <div class="link-set">
+            <a href="./weekly-algorithms/001-matrix-work/matrix-work.html">
+                <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
+                    alt="" srcset="">
+                Matrix Work
+            </a>
+            <p>for [#1] April 1 | Coded on March 31, 2023</p>
+        </div>
     </div>
 
-
-    <br><br><br>
-    <p>Me faltan hacer las conexiones de regreso al index</p>
+    <div class="other-algorithms">
+        <h2>Other Algorithms</h2>
+        <div class="link-set">
+            <a href="./other-algorithms/001-roman-numbers/roman-numbers.html">
+                <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
+                    alt="" srcset="">
+                Roman numbers
+            </a>
+            <p>Coded on April 1, 2023</p>
+        </div>
+    </div>
 </body>
 
 </html>
