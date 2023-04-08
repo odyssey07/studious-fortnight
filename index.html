@@ -44,8 +44,14 @@
         .studious-fortnight {
             margin: 10px 20px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
+
+        .studious-fortnight > div {
+            margin-bottom: 3rem;
+        }
+
+
 
     </style>
 </head>
@@ -53,14 +59,21 @@
 <body class="studious-fortnight">
     <div class="weekly-projects">
         <h2>Weekly Projects</h2>
-
+        <div class="link-set">
+            <a href="./weekly-projects/004-sidebar-versions/sidebar-versions.html">
+                <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
+                    alt="" srcset="">
+                Sidebar versions
+            </a>
+            <p>Coded on 7/4/23 for 8/4/23 (#4)</p>
+        </div>
         <div class="link-set">
             <a href="./weekly-projects/003-four-squares/four-squares.html">
                 <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
                     alt="" srcset="">
                 Four Squares
             </a>
-            <p>for [#3] April 1 | Coded on March 30, 2023</p>
+            <p>Coded on 30/3/23 for 1/4/23 (#3)</p>
         </div>
         <div class="link-set">
             <a href="./weekly-projects/002-responsive-navbar/responsive-navbar.html">
@@ -68,7 +81,7 @@
                     srcset="">
                 Responsive NavBar
             </a>
-            <p>for [#2] March 25 | Coded on ??</p>
+            <p>Coded on ?? for 25/3/23 (#2)</p>
         </div>
         <div class="link-set">
             <a href="./weekly-projects/001-animations/animations.html">
@@ -76,7 +89,7 @@
                     alt="" srcset="">
                 Animation Tabs
             </a>
-            <p>for [#1] March 18 | Coded on ??</p>
+            <p>Coded on ?? for 18/3/23 (#1)</p>
         </div>
     </div>
 
@@ -84,25 +97,37 @@
         <h2>Weekly Algorithms</h2>
 
         <div class="link-set">
+            <a href="./weekly-algorithms/002-frequent-words-in-text/frequent-words-in-text.html">
+                <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
+                    alt="" srcset="">
+                Most frequent words in text
+            </a>
+            <p>Coded on 7/4/23 for 8/4/23 (#2)</p>
+        </div>
+        <div class="link-set">
             <a href="./weekly-algorithms/001-matrix-work/matrix-work.html">
                 <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
                     alt="" srcset="">
                 Matrix Work
             </a>
-            <p>for [#1] April 1 | Coded on March 31, 2023</p>
+            <p>Coded on 31/3/23 for 1/4/23 (#1)</p>
         </div>
     </div>
 
     <div class="other-algorithms">
-        <h2>Other Algorithms</h2>
+        <h2>Other Proyects</h2>
         <div class="link-set">
             <a href="./other-algorithms/001-roman-numbers/roman-numbers.html">
                 <img src="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png"
                     alt="" srcset="">
-                Roman numbers
+                (AL) Roman numbers
             </a>
-            <p>Coded on April 1, 2023</p>
+            <p>Coded on 1/4/23</p>
         </div>
+    </div>
+
+    <div class="saturday-works">
+        <h2>Saturday Works</h2>
     </div>
 </body>
 
