@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF | Anagrams</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dews3zbls/image/upload/v1679076668/logos/Javascript_vm5qga.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: none;
+        }
+
+        .algorithms-body {
+            height: 100vh;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .algorithms-body a {
+            display: block;
+            font-family: "Indie Flower";
+            font-size: 4rem;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 5vh;
+            animation: anagrams 2s alternate linear infinite;
+        }
+
+        @keyframes anagrams {
+            0% {color: black}
+            100% {color: rgb(25, 221, 11)}
+        }
+
+        body > p {
+            font-size: 1.5rem;
+            width: 84%;
+            margin-bottom: 5vh;
+        }
+
+        .anagrams p {
+            font-size: 1.6rem;
+            font-style: italic;
+            background-color: rgb(204, 204, 204);
+            padding: .5rem 1rem;
+        }
+
+        .anagrams {
+            display: grid;
+            grid-template-columns: 350px 350px;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body class="algorithms-body">
+    <a 
+        href="https://articulo.mercadolibre.com.ar/MLA-1144613216-kit-cepilllo-para-limpiar-teclado-y-auriculares-5-en-1-_JM#reco_item_pos=0&reco_backend=machinalis-v2p-pdp-boost-v2_ranker&reco_backend_type=low_level&reco_client=vip-v2p&reco_id=e79f8919-b9c3-4a9a-97f5-5c94651fc334"
+        target="_blank"
+        >
+        Anagramas
+    </a>
+    <p>Una palabra es anagrama de otra si las dos tienen las mismas letras, con el mismo número de apariciones, pero en un orden diferente.</p>
+    <div class="anagrams">
+        <p>Castor</p>
+        <p>Castro</p>
+        <p>Lapicero</p>
+        <p>Copiarle</p>
+        <p>Animales</p>
+        <p>Milanesa</p>
+        <p>Tom Marvolo Riddle</p>
+        <p>I am Lord Voldemort</p>
+    </div>
+    <script src="anagrams.js"></script>
+</body>
+</html>
