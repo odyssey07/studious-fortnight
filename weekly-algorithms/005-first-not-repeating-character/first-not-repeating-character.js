@@ -1,7 +1,7 @@
 function firstNonRepeatingLetter(string) {
     string = string
         .toLowerCase()
-        .replace(/[,.?!+-/()[\]\{\}]/g, ' ');
+        .replace(/[,.?!+-/()[\]\{\}]/g, '');
 
     let index = 0;
 
@@ -21,6 +21,6 @@ function firstNonRepeatingLetter(string) {
     return '';
 }
 
-const result = firstNonRepeatingLetter('Cualquier palabra puede ir aqui. Claro.');
+const result = firstNonRepeatingLetter('arboledar');
 
 console.log(result);

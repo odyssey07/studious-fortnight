@@ -14,8 +14,8 @@ works.push(() => {
     /* window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-    })
-    */
+    })*/
+    
     const mouse = {
         x: null,
         y: null
@@ -28,7 +28,7 @@ works.push(() => {
         ctx.fill();
     }
 
-    canvas.addEventListener('click', e => {
+    canvas.addEventListener('click', e => {        
         mouse.x = e.x;
         mouse.y = e.y;
         console.log(mouse);
@@ -75,4 +75,5 @@ works.push(() => {
 
 app(2);
 
+// ctx.moveTo(x, y)
 // ctx.lineTo(x, y)
