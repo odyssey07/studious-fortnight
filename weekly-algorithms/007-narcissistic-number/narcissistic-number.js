@@ -19,12 +19,13 @@ No se requiere la comprobación de errores para cadenas de texto u otras entrada
 
 function narcissistic(value) {
     const digits = (value+'').split('');
+    // const digits = value.split('')
     const len = digits.length;
     let sum = 0;
     for (let digit of digits) {
-        sum += Math.pow(digit, len);
+        sum += Math.pow(digit, len); //digit ^ len
     }
-    return sum === (value * 1);
+    return sum === (value * 1); // Number('153') >>> '153'*1 = 153
 }
 
 console.log(narcissistic(153))
